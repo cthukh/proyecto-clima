@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El clima</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <h1>Tiempo local</h1>
+        </div>   
+        <span id="ciudades">
+            <a href="#" id="buenos_aires">Buenos aires</a>
+            <a href="#" id="ciudad_de_mexico">Ciudad de Mexico</a>
+            <a href="#" id="santiago">Santiago</a>
+            <a href="#" id="sao_paulo">Sao Paulo</a>
+            <a href="#" id="quito">Quito</a>
+        </span>  
+        <div>
+            <p>Mostrar temperatura en  </p>
+            <select>
+                <option id="celcius" value="c">°C</option>
+                <option id="farenhei" value="f">°F</option>
+            </select>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="city" id="container-ciudad-1">
+            <h2 id="ciudad">Buenos Aires</h2>
+            <div id="tarjeta_dias">
+                <div class="tarjeta" id="dia_1">
+                    <img src="img/nublado.png" alt="">
+                    <h3 id="hoy">Hoy</h3>
+                    <p id="clima1">Nublado</p>
+                    <p id="grados1">20°C   15°C</p>
+                </div>
+                <div class="tarjeta" id="dia_2">
+                    <img src="img/lluvia.png" alt="">
+                    <h3 id="mañana">Mañana</h3>
+                    <p id="clima2">Lluvioso</p>
+                    <p id="grados2">17°C   13°C</p>
+                </div>
+                <div class="tarjeta" id="dia_3">
+                    <img src="img/tormenta electrica.png" alt="">
+                    <h3 id="miercoles">Miércoles</h3>
+                    <p id]="clima3">tormentas</p>
+                    <p id="grados3">12°C   9°C</p>
+                </div>
+                <div class="tarjeta" id="dia_4">
+                    <img src="img/parcialmente nublado.png" alt="">
+                    <h3 id="jueves">Jueves</h3>
+                    <p id="clima4">Parcialmente nublado</p>
+                    <p id="grados4">18°C   14°C</p>
+                </div>
+                <div class="tarjeta" id="dia_5">
+                    <img src="img/soleado.png" alt="">
+                    <h3 id="viernes">Viernes</h3>
+                    <p id="clima5">Soleado</p>
+                    <p id="grados5">24°C   17°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="city" id="container-ciudad-2">
+            <h2 id="ciudad">Ciudad de Mexico</h2>
+            <div id="tarjeta_dias">
+                <div class="tarjeta" id="dia_1">
+                    <img src="img/soleado.png" alt="">
+                    <h3 id="hoy">Hoy</h3>
+                    <p id="clima1">Soleado</p>
+                    <p id="grados1">28°C   25°C</p>
+                </div>
+                <div class="tarjeta" id="dia_2">
+                    <img src="img/soleado.png" alt="">
+                    <h3 id="mañana">Mañana</h3>
+                    <p id="clima2">Soleado</p>
+                    <p id="grados2">22°C   20°C</p>
+                </div>
+                <div class="tarjeta" id="dia_3">
+                    <img src="img/parcialmente nublado.png" alt="">
+                    <h3 id="miercoles">Miércoles</h3>
+                    <p id]="clima3">Parcialmente Nublado</p>
+                    <p id="grados3">18°C   14°C</p>
+                </div>
+                <div class="tarjeta" id="dia_4">
+                    <img src="img/lluvia.png" alt="">
+                    <h3 id="jueves">Jueves</h3>
+                    <p id="clima4">Lluvia</p>
+                    <p id="grados4">17°C   14°C</p>
+                </div>
+                <div class="tarjeta" id="dia_5">
+                    <img src="img/lluvia.png" alt="">
+                    <h3 id="viernes">Viernes</h3>
+                    <p id="clima5">Lluvia</p>
+                    <p id="grados5">18°C   15°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="city" id="container-ciudad-3">
+            <h2 id="ciudad">Santiago</h2>
+            <div id="tarjeta_dias">
+                <div class="tarjeta" id="dia_1">
+                    <img src="img/lluvia.png" alt="">
+                    <h3 id="hoy">Hoy</h3>
+                    <p id="clima1">Lluvia</p>
+                    <p id="grados1">20°C   18°C</p>
+                </div>
+                <div class="tarjeta" id="dia_2">
+                    <img src="img/nublado.png" alt="">
+                    <h3 id="mañana">Mañana</h3>
+                    <p id="clima2">Nublado</p>
+                    <p id="grados2">22°C   17°C</p>
+                </div>
+                <div class="tarjeta" id="dia_3">
+                    <img src="img/soleado.png" alt="">
+                    <h3 id="miercoles">Miércoles</h3>
+                    <p id]="clima3">Soleado</p>
+                    <p id="grados3">25°C   20°C</p>
+                </div>
+                <div class="tarjeta" id="dia_4">
+                    <img src="img/soleado.png" alt="">
+                    <h3 id="jueves">Jueves</h3>
+                    <p id="clima4">Soleado</p>
+                    <p id="grados4">28°C   26°C</p>
+                </div>
+                <div class="tarjeta" id="dia_5">
+                    <img src="img/soleado.png" alt="">
+                    <h3 id="viernes">Viernes</h3>
+                    <p id="clima5">Soleado</p>
+                    <p id="grados5">30°C   28°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="city" id="container-ciudad-4">
+            <h2 id="ciudad">Sao Paulo</h2>
+            <div id="tarjeta_dias">
+                <div class="tarjeta" id="dia_1">
+                    <img src="img/nublado.png" alt="">
+                    <h3 id="hoy">Hoy</h3>
+                    <p id="clima1">Nublado</p>
+                    <p id="grados1">22°C   18°C</p>
+                </div>
+                <div class="tarjeta" id="dia_2">
+                    <img src="img/nublado.png" alt="">
+                    <h3 id="mañana">Mañana</h3>
+                    <p id="clima2">Nublado</p>
+                    <p id="grados2">21°C   16°C</p>
+                </div>
+                <div class="tarjeta" id="dia_3">
+                    <img src="img/lluvia.png" alt="">
+                    <h3 id="miercoles">Miércoles</h3>
+                    <p id]="clima3">Lluvia</p>
+                    <p id="grados3">18°C   11°C</p>
+                </div>
+                <div class="tarjeta" id="dia_4">
+                    <img src="img/tormenta electrica.png" alt="">
+                    <h3 id="jueves">Jueves</h3>
+                    <p id="clima4">Tormenta Electrica</p>
+                    <p id="grados4">15°C   10°C</p>
+                </div>
+                <div class="tarjeta" id="dia_5">
+                    <img src="img/tormenta electrica.png" alt="">
+                    <h3 id="viernes">Viernes</h3>
+                    <p id="clima5">Tormenta Electrica</p>
+                    <p id="grados5">13°C   11°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="city" id="container-ciudad-5">
+            <h2 id="ciudad">Quito</h2>
+            <div id="tarjeta_dias">
+                <div class="tarjeta" id="dia_1">
+                    <img src="img/parcialmente nublado.png" alt="">
+                    <h3 id="hoy">Hoy</h3>
+                    <p id="clima1">Parcialmente Nublado</p>
+                    <p id="grados1">24°C   18°C</p>
+                </div>
+                <div class="tarjeta" id="dia_2">
+                    <img src="img/nublado.png" alt="">
+                    <h3 id="mañana">Mañana</h3>
+                    <p id="clima2">Nublado</p>
+                    <p id="grados2">20°C   13°C</p>
+                </div>
+                <div class="tarjeta" id="dia_3">
+                    <img src="img/parcialmente nublado.png" alt="">
+                    <h3 id="miercoles">Miércoles</h3>
+                    <p id]="clima3">Parcialmente Nublado</p>
+                    <p id="grados3">18°C   11°C</p>
+                </div>
+                <div class="tarjeta" id="dia_4">
+                    <img src="img/soleado.png" alt="">
+                    <h3 id="jueves">Jueves</h3>
+                    <p id="clima4">Soleado</p>
+                    <p id="grados4">21°C   14°C</p>
+                </div>
+                <div class="tarjeta" id="dia_5">
+                    <img src="img/parcialmente nublado.png" alt="">
+                    <h3 id="viernes">Viernes</h3>
+                    <p id="clima5">Parcialmente Nublado</p>
+                    <p id="grados5">24°C   17°C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">¡Detente! Tiempo de cookies. Usamos cookies (tristemente, no las comestibles) 
+        para personalizar contenido y anuncios, proporcionar funciones de redes sociales 
+        y analizar nuestro tráfico. <a href="#" id="leer-mas"> Leer mas...  </a><button type="button" id="btn-acept-cookie">Acepto</button></footer>
+</body>
+</html>
